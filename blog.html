@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | Irsyad Mustaqim</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:wght@300;400;500&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="bg-particles" id="particles"></div>
+  <div class="gold-gradient-orb orb1"></div>
+  <div class="gold-gradient-orb orb2"></div>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="logo-letter">I</span><span class="logo-dot">✦</span><span class="logo-letter">M</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="blog.html" class="nav-link active">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <p class="hero-eyebrow">✦ Thoughts & Stories ✦</p>
+    <h1 class="page-title">My <span class="gold-text">Blog</span></h1>
+    <div class="hero-divider"><span></span><span class="diamond">◆</span><span></span></div>
+  </section>
+
+  <!-- BLOG POSTS -->
+  <section class="blog-section">
+    <div class="blog-grid">
+
+      <!-- Post 1 - Featured -->
+      <article class="blog-card featured-post">
+        <div class="blog-card-img" style="background: linear-gradient(135deg, #1a1400 0%, #3d2b00 50%, #1a1400 100%);">
+          <div class="blog-card-emoji">🧊</div>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-tag">3D Design</span>
+            <span class="blog-date">◆ 15 May 2025</span>
+          </div>
+          <h2 class="blog-title">My Journey Into Blender: From Zero to 3D Models</h2>
+          <p class="blog-excerpt">When I first opened Blender, I was completely lost. The interface was intimidating — buttons everywhere, strange keyboard shortcuts, and a default cube staring at me. Here's how I turned confusion into creativity...</p>
+          <div class="blog-footer">
+            <span class="read-time">⏱ 5 min read</span>
+            <button class="read-more-btn" onclick="togglePost('post1')">Read More ↓</button>
+          </div>
+          <div class="blog-full" id="post1" style="display:none">
+            <p>Starting with Blender felt overwhelming, but I quickly learned that every expert was once a beginner. My first project was a simple coffee cup — basic geometry, but it taught me the fundamentals of mesh editing, materials, and lighting.</p>
+            <p>I spent hours on YouTube tutorials and UniSZA lab sessions, slowly understanding how to manipulate vertices, edges, and faces. The "G" key to grab, "R" to rotate, "S" to scale — these shortcuts became second nature.</p>
+            <p>My biggest breakthrough came when I rendered my first 3D scene with realistic lighting. That moment of seeing a flat mesh transform into something that looked three-dimensional and real — it was addictive. Now I use Blender for every academic project that requires visual representation.</p>
+            <p><strong class="gold-text">Tips for Blender beginners:</strong> Start with the donut tutorial by Blender Guru, practice shortcuts daily, and don't be afraid to make mistakes — that's how you learn.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="blog-card">
+        <div class="blog-card-img" style="background: linear-gradient(135deg, #001a00 0%, #003300 50%, #001a00 100%);">
+          <div class="blog-card-emoji">🎮</div>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-tag">Game Dev</span>
+            <span class="blog-date">◆ 2 April 2025</span>
+          </div>
+          <h2 class="blog-title">Building My First Interactive App in Unity 3D</h2>
+          <p class="blog-excerpt">Unity 3D opened a completely new world for me — the world of interactive experiences. Creating something a user can actually click, move, and interact with is a completely different feeling from static design...</p>
+          <div class="blog-footer">
+            <span class="read-time">⏱ 4 min read</span>
+            <button class="read-more-btn" onclick="togglePost('post2')">Read More ↓</button>
+          </div>
+          <div class="blog-full" id="post2" style="display:none">
+            <p>My introduction to Unity 3D was through my multimedia courseware Final Year Project. The goal was to create an interactive educational application — and Unity was the perfect tool for it.</p>
+            <p>I learned C# basics to write simple scripts: button interactions, scene transitions, and basic animations. The concept of GameObjects and Components was confusing at first, but once it clicked, everything made sense.</p>
+            <p>The most rewarding part was seeing someone actually use my app and navigate through it. That user-first thinking changed how I approach all my projects now.</p>
+            <p><strong class="gold-text">What I learned:</strong> User experience matters more than fancy features. Simple, clean interactions always win.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="blog-card">
+        <div class="blog-card-img" style="background: linear-gradient(135deg, #1a0000 0%, #3d0000 50%, #1a0000 100%);">
+          <div class="blog-card-emoji">🎨</div>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-tag">Graphic Design</span>
+            <span class="blog-date">◆ 10 March 2025</span>
+          </div>
+          <h2 class="blog-title">What Adobe Creative Suite Taught Me About Storytelling</h2>
+          <p class="blog-excerpt">Design isn't just about making things look pretty — it's about telling a story without words. Every color choice, font selection, and layout decision communicates something to the viewer...</p>
+          <div class="blog-footer">
+            <span class="read-time">⏱ 6 min read</span>
+            <button class="read-more-btn" onclick="togglePost('post3')">Read More ↓</button>
+          </div>
+          <div class="blog-full" id="post3" style="display:none">
+            <p>Working with Photoshop, Illustrator, and InDesign has fundamentally changed how I see the world around me. I now notice kerning in restaurant menus, hierarchy in billboard designs, and color psychology in brand logos.</p>
+            <p>Designing posters for academic events taught me to ask: Who is the audience? What is the ONE message they must take away? How do I guide their eye through the composition?</p>
+            <p>My favorite Adobe tool is Illustrator — vector graphics that scale infinitely and the pen tool that, once mastered, feels like a superpower. I've used it to create logos, infographics, and complete visual identity systems.</p>
+            <p><strong class="gold-text">Design principle I live by:</strong> Less is more. Every element must earn its place in the design.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo">I<span class="gold-text">✦</span>M</div>
+    <p class="footer-tagline">Irsyad Mustaqim Bin Roslan · Kuala Terengganu, Malaysia</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="footer-copy">© 2025 Irsyad Mustaqim. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function togglePost(id) {
+      const el = document.getElementById(id);
+      const btn = el.previousElementSibling.querySelector('.read-more-btn');
+      if (el.style.display === 'none') {
+        el.style.display = 'block';
+        btn.textContent = 'Read Less ↑';
+      } else {
+        el.style.display = 'none';
+        btn.textContent = 'Read More ↓';
+      }
+    }
+  </script>
+</body>
+</html>
